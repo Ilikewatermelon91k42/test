@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class circle{
+    private:
+        float radius;
+    public:
+        void setinfo(float r){
+            radius = r;
+        }
+        float area(){
+            return 3.14 * radius * radius;
+        }
+        float circumference(){
+            return 2 * 3.14 * radius;
+        }
+        void getinfo(){
+            cout << "Radius: " << radius << endl;
+            cout << "Area: " << area() << endl;
+            cout << "Circumference: " << circumference() << endl;
+        }
+};
+int main(){
+    circle c;
+    float r;
+    cout << "Enter radius-->";
+    cin >> r;
+    c.setinfo(r);
+    c.getinfo();
+    return 0;
+}
