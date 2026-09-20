@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class student{
+    private:
+    int rollno;
+    public:
+    void setinfo(int r){
+        rollno=r;
+    }
+    void getinfo(){
+        cout<<"Roll number is: "<<rollno<<endl;
+    }
+};
+int main(){
+    student s1;
+    s1.setinfo(101);
+    s1.getinfo();
+    return 0;
+}
