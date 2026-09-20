@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+void swapnumbers(int &a, int &b) {
+    int temp;
+    temp=a;
+    a = b;
+    b = temp;
+}
+int main(){
+    int x,y;
+    cout<<"Enter two numbers: ";
+    cin>>x>>y;
+    cout<<"Before swapping: "<<endl<<"x = "<<x<<endl<<"y = "<<y<<endl;
+    swapnumbers(x, y);
+    cout<<"After swapping: "<<endl<<"x = "<<x<<endl<<"y = "<<y<<endl;
+    return 0;
+}
